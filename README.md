@@ -4,6 +4,7 @@ Custom View Builder that allows you to build custom layouts...
 If you want to build a view that can layout it's children, you need to get them as an array.
 That's where `@VariadicViewBuilder`. It's a function builder that allows you to get an array of views, but with the same API look as a regular `@ViewBuilder`.
 
+And the important thing is that it automatically deals with `ForEach` and similar Views, just like `HStack` and `VStack` already do. So you can provide an API that is consistent with Apple's. 
 
 ## Example
 
@@ -43,10 +44,10 @@ import PackageDescription
 let package = Package(
     [...]
     dependencies: [
-        .package(url: "https://github.com/nerdsupremacist/Brainfuck.swift.git", from: "0.1.0"),
+        .package(url: "https://github.com/nerdsupremacist/VariadicViewBuilder.swift.git", from: "0.1.0"),
     ]
 )
-```
+``` 
 
 ## Contributions
 Contributions are welcome and encouraged!
