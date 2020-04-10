@@ -3,7 +3,9 @@ import Foundation
 import SwiftUI
 
 @_functionBuilder
-public struct VariadicViewBuilder {
+public struct VariadicViewBuilder { }
+
+extension VariadicViewBuilder {
 
     public static func buildBlock() -> [AnyView] {
         return []
@@ -12,11 +14,7 @@ public struct VariadicViewBuilder {
     public static func buildBlock<Content : View>(_ content: Content) -> [AnyView] {
         return content.decompose()
     }
-
-}
-
-extension VariadicViewBuilder {
-
+    
     public static func buildBlock<C1 : View, C2 : View>(_ c1: C1, _ c2: C2) -> [AnyView] {
         return [c1.decompose(), c2.decompose()].flatMap { $0 }
     }
