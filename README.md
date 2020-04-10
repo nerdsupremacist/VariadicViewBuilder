@@ -28,28 +28,7 @@ struct ReveredVStack: View {
 }
 ```
 
-You can then use this view, however you like. For example this content view yields the following UI:
-
-```swift
-struct ContentView: View {
-    var body: some View {
-        ScrollView {
-            ReveredVStack {
-                Text("Last Updated: Now").foregroundColor(.primary)
-
-                ForEach(0..<10) { number in
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 20).fill(Color.yellow)
-                        Text("Hello World \(number)").foregroundColor(.black)
-                    }
-                    .frame(minHeight: 80)
-                    .padding(.all, 10)
-                }
-            }
-        }
-    }
-}
-```
+You can then use this view, however you like. For example:
 
 ![](reversedvstack.png)
 
