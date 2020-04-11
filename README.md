@@ -49,6 +49,11 @@ let package = Package(
 )
 ``` 
 
+## Known issues
+
+- Due to [SR-11628](https://bugs.swift.org/browse/SR-11628) using this function builder with a single View will not compile
+    - This should be fixed by April 30th, 2020 with Swift 5.3
+
 ## Contributions
 Contributions are welcome and encouraged!
 
