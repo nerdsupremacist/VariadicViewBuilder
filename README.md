@@ -53,6 +53,7 @@ let package = Package(
 
 - Due to [SR-11628](https://bugs.swift.org/browse/SR-11628) using this function builder with a single View will not compile
     - This should be fixed by April 30th, 2020 with Swift 5.3
+    - You can use single views if you use the (Trunk Development Snapshot)[https://swift.org/download/#snapshots]. But do so at your own risk 
 
 ## Contributions
 Contributions are welcome and encouraged!
