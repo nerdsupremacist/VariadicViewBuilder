@@ -10,11 +10,15 @@ let package = Package(
         .library(
             name: "VariadicViewBuilder",
             targets: ["VariadicViewBuilder"]),
+
+        .library(
+            name: "AnyViewReflection",
+            targets: ["AnyViewReflection"]),
     ],
     dependencies: [],
     targets: [
-        .target(
-            name: "VariadicViewBuilder",
-            dependencies: []),
+        .target(name: "VariadicViewBuilder", dependencies: ["AnyViewReflection"]),
+        .target(name: "AnyViewReflection", dependencies: []),
+        .testTarget(name: "VariadicViewBuilderTest", dependencies: ["VariadicViewBuilder"])
     ]
 )
