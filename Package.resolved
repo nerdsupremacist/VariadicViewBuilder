@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "AssociatedTypeRequirementsKit",
+        "repositoryURL": "https://github.com/nerdsupremacist/AssociatedTypeRequirementsKit.git",
+        "state": {
+          "branch": null,
+          "revision": "e00f05b46bef9cab68b93cc0e248c1782e37c34b",
+          "version": "0.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

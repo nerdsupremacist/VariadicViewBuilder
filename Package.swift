@@ -10,15 +10,12 @@ let package = Package(
         .library(
             name: "VariadicViewBuilder",
             targets: ["VariadicViewBuilder"]),
-
-        .library(
-            name: "AnyViewReflection",
-            targets: ["AnyViewReflection"]),
     ],
-    dependencies: [],
+    dependencies: [
+        .package(url: "https://github.com/nerdsupremacist/AssociatedTypeRequirementsKit.git", from: "0.1.0")
+    ],
     targets: [
-        .target(name: "VariadicViewBuilder", dependencies: ["AnyViewReflection"]),
-        .target(name: "AnyViewReflection", dependencies: []),
+        .target(name: "VariadicViewBuilder", dependencies: ["AssociatedTypeRequirementsKit"]),
         .testTarget(name: "VariadicViewBuilderTest", dependencies: ["VariadicViewBuilder"])
     ]
 )
